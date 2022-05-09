@@ -1,0 +1,17 @@
+    <app-header></app-header>
+    <div class="contenedor">
+      <div class="contenedor-form">
+        <span>Latitud:</span><br>
+        <input type="number" [(ngModel)]="latitud" class="form-control"><br>
+        <span>Longitud:</span><br>
+        <input type="number" [(ngModel)]="longitud" class="form-control"><br>
+        <div class="btn-group">
+          <button (click)="cargarDatos(latitud, longitud)" type="button" class="btn btn-success">Calcular</button>
+        </div>
+        
+      </div>
+      <div>
+        <app-cards [sunrise]="datos.results.sunrise" [sunset]="datos.results.sunset"></app-cards>
+      </div> 
+    </div>       
+  <app-footer></app-footer>
