@@ -11,8 +11,8 @@ import { DataService } from './data.service';
 export class AppComponent implements OnInit{
   title = 'SunsetSunrise';
   datos: any = [];
-  latitud:string ="" ;
-  longitud:string ="";
+  latitud:string ="4.6533326" ;
+  longitud:string ="-74.083652";
 
   constructor(
     private dataService : DataService

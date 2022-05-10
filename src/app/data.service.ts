@@ -14,6 +14,7 @@ export class DataService {
     let params = new HttpParams();
     params = params.set('lat', lat);
     params = params.set('lng', lng);
+    params = params.set('date', 'today');
 
     return this.http.get(this.urlApi, {params});
   }
